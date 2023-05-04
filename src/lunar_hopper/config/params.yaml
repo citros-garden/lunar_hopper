@@ -1,0 +1,10 @@
+lunar_hopper:
+  ros__parameters:
+    m_fuel_0: 27.5
+    d_f: 10000.0
+    m_fuel_f: 0.0
+    dry_mass: 30.0
+    Fthrustmax: 208.0
+    Isp: 285.0
+    publish_freq: 1.0
+    
