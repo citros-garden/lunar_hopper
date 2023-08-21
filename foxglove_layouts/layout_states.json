@@ -1,0 +1,104 @@
+{
+  "configById": {
+    "Plot!2kt1jyo": {
+      "paths": [
+        {
+          "value": "/lunar_hopper/state.data[0]",
+          "enabled": true,
+          "timestampMethod": "receiveTime",
+          "label": "Trajectory"
+        }
+      ],
+      "showXAxisLabels": true,
+      "showYAxisLabels": true,
+      "showLegend": true,
+      "legendDisplay": "floating",
+      "showPlotValuesInLegend": false,
+      "isSynced": true,
+      "xAxisVal": "custom",
+      "sidebarDimension": 240,
+      "foxglovePanelTitle": "Trajectory",
+      "xAxisPath": {
+        "value": "/lunar_hopper/state.data[1]"
+      }
+    },
+    "Plot!b1bmmb": {
+      "paths": [
+        {
+          "value": "/lunar_hopper/state.data[3]",
+          "enabled": true,
+          "timestampMethod": "receiveTime",
+          "label": "Vd"
+        }
+      ],
+      "showXAxisLabels": true,
+      "showYAxisLabels": true,
+      "showLegend": true,
+      "legendDisplay": "floating",
+      "showPlotValuesInLegend": false,
+      "isSynced": true,
+      "xAxisVal": "timestamp",
+      "sidebarDimension": 240,
+      "foxglovePanelTitle": "Vd",
+      "followingViewWidth": 120
+    },
+    "Plot!47ip658": {
+      "paths": [
+        {
+          "value": "/lunar_hopper/state.data[2]",
+          "enabled": true,
+          "timestampMethod": "receiveTime",
+          "label": "Vh"
+        }
+      ],
+      "showXAxisLabels": true,
+      "showYAxisLabels": true,
+      "showLegend": true,
+      "legendDisplay": "floating",
+      "showPlotValuesInLegend": false,
+      "isSynced": true,
+      "xAxisVal": "timestamp",
+      "sidebarDimension": 240,
+      "foxglovePanelTitle": "Vh",
+      "followingViewWidth": 120
+    },
+    "Plot!1f2nvrc": {
+      "paths": [
+        {
+          "value": "/lunar_hopper/state.data[4]",
+          "enabled": true,
+          "timestampMethod": "receiveTime",
+          "label": "fuel mass"
+        }
+      ],
+      "showXAxisLabels": true,
+      "showYAxisLabels": true,
+      "showLegend": true,
+      "legendDisplay": "floating",
+      "showPlotValuesInLegend": false,
+      "isSynced": true,
+      "xAxisVal": "timestamp",
+      "sidebarDimension": 240,
+      "foxglovePanelTitle": "fuel mass",
+      "followingViewWidth": 120
+    }
+  },
+  "globalVariables": {},
+  "userNodes": {},
+  "playbackConfig": {
+    "speed": 1
+  },
+  "layout": {
+    "first": {
+      "first": "Plot!2kt1jyo",
+      "second": "Plot!b1bmmb",
+      "direction": "row"
+    },
+    "second": {
+      "first": "Plot!47ip658",
+      "second": "Plot!1f2nvrc",
+      "direction": "row"
+    },
+    "direction": "column"
+  }
+}
