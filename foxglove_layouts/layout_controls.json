@@ -1,0 +1,54 @@
+{
+  "configById": {
+    "Plot!47ip658": {
+      "paths": [
+        {
+          "value": "/lunar_hopper/control.data[0]",
+          "enabled": true,
+          "timestampMethod": "receiveTime",
+          "label": "U1"
+        }
+      ],
+      "showXAxisLabels": true,
+      "showYAxisLabels": true,
+      "showLegend": true,
+      "legendDisplay": "floating",
+      "showPlotValuesInLegend": false,
+      "isSynced": true,
+      "xAxisVal": "timestamp",
+      "sidebarDimension": 240,
+      "foxglovePanelTitle": "U1",
+      "followingViewWidth": 120
+    },
+    "Plot!1f2nvrc": {
+      "paths": [
+        {
+          "value": "/lunar_hopper/control.data[1]",
+          "enabled": true,
+          "timestampMethod": "receiveTime",
+          "label": "U2"
+        }
+      ],
+      "showXAxisLabels": true,
+      "showYAxisLabels": true,
+      "showLegend": true,
+      "legendDisplay": "floating",
+      "showPlotValuesInLegend": false,
+      "isSynced": true,
+      "xAxisVal": "timestamp",
+      "sidebarDimension": 240,
+      "foxglovePanelTitle": "U2",
+      "followingViewWidth": 120
+    }
+  },
+  "globalVariables": {},
+  "userNodes": {},
+  "playbackConfig": {
+    "speed": 1
+  },
+  "layout": {
+    "first": "Plot!47ip658",
+    "second": "Plot!1f2nvrc",
+    "direction": "row"
+  }
+}

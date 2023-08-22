@@ -1,5 +1,4 @@
-/node_modules
-/.citros
+.citros
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -12,6 +11,8 @@ __pycache__/
 # Distribution / packaging
 .Python
 build/
+install/
+log/
 develop-eggs/
 dist/
 downloads/

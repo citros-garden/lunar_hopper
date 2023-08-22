@@ -13,15 +13,16 @@ class lunar_hopper(Node):
         super().__init__('dynamics')
         
         self.state_pub = self.create_publisher(Float64MultiArray , '/lunar_hopper/state', 10)
+        self.control_pub = self.create_publisher(Float64MultiArray , '/lunar_hopper/control', 10)
+        self.time_pub = self.create_publisher(Float64MultiArray , '/lunar_hopper/time', 10)
 
-        self.get_logger().info(f"Starting lunar_hopper version = 0.0.1")
+        self.get_logger().info(f"Starting lunar_hopper version = 0.1.0")
 
         #Defining states
         #Initial state vector
         self.declare_parameter('m_fuel_0', 3543000.0)  # Initial fuel mass, kg
 
         #Target state vector
-        self.declare_parameter('d_f', 0.0) # target latitude, deg
         self.declare_parameter('m_fuel_f', 1000.0)  # target fuel mass, kg
         
         #Additional params
@@ -32,8 +33,6 @@ class lunar_hopper(Node):
         self.declare_parameter('publish_freq', 1.0)
 
         self.m_fuel_0 = self.get_parameter('m_fuel_0').get_parameter_value().double_value
-
-        self.lat_f = self.get_parameter('d_f').get_parameter_value().double_value
 
         self.m_fuel_f = self.get_parameter('m_fuel_f').get_parameter_value().double_value
 
@@ -108,16 +107,22 @@ class lunar_hopper(Node):
                                                         ocp_u00 = u00)
         
         self.state_msg = Float64MultiArray()
+        self.control_msg = Float64MultiArray()
+        self.time_msg = Float64MultiArray()
         timer_period = self.get_parameter('publish_freq').get_parameter_value().double_value  # frequency of publishing
-        self.timer = self.create_timer(timer_period, self.timer_callback)
+        self.timer = self.create_timer(1/timer_period, self.timer_callback)
         
     def timer_callback(self):
 
         self.state_msg.data = [self.res_x[self.i][0], self.res_x[self.i][1], self.res_x[self.i][2], 
                                self.res_x[self.i][3], self.res_x[self.i][4]]
+        self.control_msg.data = [self.res_u[self.i][0], self.res_u[self.i][1]]
+        self.time_msg.data = [self.res_t[self.i]]
 
         self.state_pub.publish(self.state_msg)
-        self.get_logger().info(f"Publishing = {self.state_msg.data}")
+        self.control_pub.publish(self.control_msg)
+        self.time_pub.publish(self.time_msg)
+        self.get_logger().info(f"Publishing state = {self.state_msg.data}, state = {self.control_msg.data}, state = {self.time_msg.data}")
 
         self.i += 1
         if self.i==len(self.res_t):
