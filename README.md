@@ -156,11 +156,7 @@ Manual plot layout configuration: we have 5 states in the output messages, so we
 
 OR
 
-:::tip
-
 You can use prepared layout: Go to the ```Layout``` tab on the top panel, then click on import_layout button and select the file from foxglove_layouts folder.
-
-:::
 
 $$
 \begin{array}{|c|c|c|}
@@ -177,11 +173,7 @@ $$
 $$
 
 
-:::tip
-
 The best way to process simulation results is CITROS notebook 🍋 :)
-
-:::
 
 
 ### Run 🚀
@@ -195,13 +187,7 @@ ros2 launch lunar_hopper lunar_hopper.launch.py
 
 OR
 
-:::tip
-
 You can use Visual Code Tasks: simply press ```Alt+T``` and select ```Launch``` task to build, source and launch the project automaticly.
-
-:::
-
-<!-- ![gif](img/gif0.gif "FoxGlove example") -->
 
 ## CITROS usage 🛸
 Although you can get simulation results using FoxGlove, the best way to work with such simulations and process the results is CITROS! With its power, it is possible to create complex data processing scenarios, including the construction of more complex graphs, mathematical analysis and other high-level processing methods.
