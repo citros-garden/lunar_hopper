@@ -1,6 +1,6 @@
 ## Example overview 🌐 
 
-![jpg](img/hopper0.jpg "Did you find a easter egg?)")
+![jpg](docs/img/hopper0.jpg "Did you find a easter egg?)")
 
 The Lunar Hopper project is a lunar exploration planning project aimed at solving the intricate problem of lunar hopper missions. It focuses on optimizing the spacecraft's trajectory across the whole flight. Leveraging state-of-the-art optimal problem-solving algorithms, specifically the MPOPT Python library, this project seeks to determine the most efficient path for maximizing the distance traveled during the mission. It empowers users to customize essential parameters such as spacecraft mass, fuel quantity, thrust, and specific impulse. 
 
