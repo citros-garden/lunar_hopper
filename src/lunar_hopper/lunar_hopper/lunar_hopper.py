@@ -122,7 +122,7 @@ class lunar_hopper(Node):
         self.state_pub.publish(self.state_msg)
         self.control_pub.publish(self.control_msg)
         self.time_pub.publish(self.time_msg)
-        self.get_logger().info(f"Publishing state = {self.state_msg.data}, state = {self.control_msg.data}, state = {self.time_msg.data}")
+        self.get_logger().info(f"Publishing state = {self.state_msg.data}, control = {self.control_msg.data}, time = {self.time_msg.data}")
 
         self.i += 1
         if self.i==len(self.res_t):
