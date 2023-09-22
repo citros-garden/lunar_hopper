@@ -1,0 +1,6 @@
+source;share/lunar_hopper/hook/pythonpath.ps1
+source;share/lunar_hopper/hook/pythonpath.dsv
+source;share/lunar_hopper/hook/pythonpath.sh
+source;share/lunar_hopper/hook/ament_prefix_path.ps1
+source;share/lunar_hopper/hook/ament_prefix_path.dsv
+source;share/lunar_hopper/hook/ament_prefix_path.sh
