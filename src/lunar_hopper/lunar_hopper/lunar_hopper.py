@@ -40,6 +40,8 @@ class lunar_hopper(Node):
         self.Fthrustmax = self.get_parameter('Fthrustmax').get_parameter_value().double_value
         self.Isp = self.get_parameter('Isp').get_parameter_value().double_value
 
+        self.get_logger().info(f"With Isp = {self.Isp}")
+        
         # Setting Moon parameters
         self.MoonRadius = 1737.1*1000
         self.Mu_Moon =  6.67*10**(-11) * 7.342e22
