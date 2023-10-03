@@ -250,8 +250,6 @@ citros run -n 'Lunar_hopper' -m 'cloud test run' -r
 ```
 Select the launch file (should be the only one here) by pressing ```Enter``` button. Now the simulation is running in the CITROS server, and it will upload results to the CITROS database automaticly.
 
-### CITROS Web usage and data analysis 🌌
-TODO
 ## Extras
 ### FoxGlove examples
 
