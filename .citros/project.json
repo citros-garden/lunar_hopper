@@ -1,0 +1,75 @@
+{
+    "citros_cli_version": "0.0.21",
+    "cover": "",
+    "description": "",
+    "git": "git@github.com:citros-garden/lunar_hopper.git",
+    "is_active": true,
+    "launches": [],
+    "packages": [
+        {
+            "cover": "",
+            "description": "Lunar hopper optimal control example MPOPT-Lulav",
+            "git": "",
+            "launches": [
+                {
+                    "description": "",
+                    "name": "lunar_hopper.launch.py",
+                    "path": "src/lunar_hopper/launch/lunar_hopper.launch.py"
+                }
+            ],
+            "maintainer": "ros",
+            "maintainer_email": "gleb@lulav.space",
+            "name": "lunar_hopper",
+            "nodes": [
+                {
+                    "entry_point": "lunar_hopper.lunar_hopper:main",
+                    "name": "lunar_hopper",
+                    "parameters": [
+                        {
+                            "description": "Parameter loaded from config.yaml",
+                            "name": "m_fuel_0",
+                            "parameterType": "float",
+                            "value": 27.5
+                        },
+                        {
+                            "description": "Parameter loaded from config.yaml",
+                            "name": "m_fuel_f",
+                            "parameterType": "float",
+                            "value": 0.0
+                        },
+                        {
+                            "description": "Parameter loaded from config.yaml",
+                            "name": "dry_mass",
+                            "parameterType": "float",
+                            "value": 30.0
+                        },
+                        {
+                            "description": "Parameter loaded from config.yaml",
+                            "name": "Fthrustmax",
+                            "parameterType": "float",
+                            "value": 208.0
+                        },
+                        {
+                            "description": "Parameter loaded from config.yaml",
+                            "name": "Isp",
+                            "parameterType": "float",
+                            "value": 285.0
+                        },
+                        {
+                            "description": "Parameter loaded from config.yaml",
+                            "name": "publish_freq",
+                            "parameterType": "float",
+                            "value": 10.0
+                        }
+                    ],
+                    "path": "src/lunar_hopper/lunar_hopper/lunar_hopper.py"
+                }
+            ],
+            "package_xml": "src/lunar_hopper/package.xml",
+            "parameters": {},
+            "path": "src/lunar_hopper",
+            "setup_py": "src/lunar_hopper/setup.py"
+        }
+    ],
+    "tags": []
+}
