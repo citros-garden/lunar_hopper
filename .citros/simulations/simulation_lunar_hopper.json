@@ -1,14 +1,14 @@
 {
-    "CPU": 2,
-    "GPU": 0,
-    "MEM": 265,
+    "CPU": 4,
+    "GPU": 4,
+    "MEM": 4096,
     "description": "Default simulation. Change the values according to your needs.",
-    "id": "5f71731b-47f2-4898-8eaa-246f9a879af5",
+    "id": "2cc542f5-3181-4b8b-a6a1-5d1a37f600e9",
     "launch": {
         "file": "lunar_hopper.launch.py",
         "package": "lunar_hopper"
     },
     "parameter_setup": "default_param_setup.json",
     "storage_type": "MCAP",
-    "timeout": 60
+    "timeout": 600
 }

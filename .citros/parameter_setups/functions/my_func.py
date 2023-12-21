@@ -8,5 +8,5 @@ def my_awesome_func(num):
 
     return numpy.multiply(num, 2.0)
 
-def func_with_context(num, citros_context):
-    return num + float(citros_context['run_id'])*10
+def func_with_context(num, context):
+    return num + float(context['sid'])*10
